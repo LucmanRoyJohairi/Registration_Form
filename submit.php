@@ -4,20 +4,22 @@
   //include ('index.html');
   include ('db_connection.php');
 
-  /*
+  
   $fname = $_POST["fname"];
   $lname = $_POST["lname"];
   $gender = $_POST["gender"];
   $email = $_POST["email"];
-  $status = $_POST["status"];*/
+  $status = $_POST["status"];
 
-  $sql = "INSERT INTO tblusers  VALUES ('1','Roy','lucs','male','123roy','single')";
+  $sql = "INSERT INTO tblusers(firstname,lastname,gender,email,status)  
+            VALUES (?,?,?,?,?)";
 
-  if ($conn->query($sql) === TRUE) {
-      echo "New record created successfully";
-  } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
-  }
+  $stmt = $conn->prepare($sql);
+  $stmt->bind_param("sssss", $fname, $lname,$gender,$email,$status);
+  $stmt->execute();
 
+  echo "New record created successfully";
+
+  $stmt->close();
   $conn->close();
 ?>
