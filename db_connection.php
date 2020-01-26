@@ -1,5 +1,6 @@
 <?php
 
+/*
 function OpenCon()
  {
  $dbhost = "localhost";
@@ -17,6 +18,19 @@ function OpenCon()
 function CloseCon($conn)
  {
  $conn -> close();
- }
+ }*/
+$servername = "localhost";
+$username = "root";
+$password = "";
+$db = "dbpeople";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password,$db);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+echo "Connected successfully";
    
 ?>
