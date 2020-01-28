@@ -4,20 +4,32 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Registration Form</h1>
-        <form action="submit.php" method = "POST">
+        <div id = "container">
+            <h1>Registration Form</h1>
+            <form action="submit.php" method = "POST">
             <input type="text" placeholder="Firstname" name = "fname">
             <br><br>
             <input type="text" placeholder="Lastname" name = "lname">
             <br><br>
-            <input type="text" placeholder="Gender" name = "gender">
+            <select name="Gender" id="">
+                <option value="" disabled selected>select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
             <br><br>
             <input type="text" placeholder="Email" name = "email">
             <br><br>
-            <input type="text" placeholder="Status" name = "status">
+            <select name="Status" >
+                <option value="" disabled selected>select status</option>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="undefined">Undefined</option>
+            </select>
             <br><br>
             <input type="Submit" value="Submit" name = "submit">
         </form>
+        </div>
 
     </body>
 </html>
