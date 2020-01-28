@@ -31,6 +31,8 @@ h1,form{
     border:1px solid blue;
     height:8%;
     margin-top: 30px;
+    font-size:20px;
+    font-weight: bolder;
 }
 h4{
     padding:0;
