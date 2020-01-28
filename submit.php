@@ -7,9 +7,9 @@
   
   $fname = $_POST["fname"];
   $lname = $_POST["lname"];
-  $gender = $_POST["gender"];
+  $gender = $_POST["Gender"];
   $email = $_POST["email"];
-  $status = $_POST["status"];
+  $status = $_POST["Status"];
 
   $sql = "INSERT INTO tblusers(firstname,lastname,gender,email,status)  
             VALUES (?,?,?,?,?)";
