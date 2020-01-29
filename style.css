@@ -14,13 +14,14 @@ body{
     margin-top:20px;
     margin-bottom: 30px;
     border-radius: 30px;
+    box-shadow: 1px 1px 1px 1px;
 }
 
-input,select{
+.entry{
     font-weight: bold;
     width: 110%; 
     height: 7%; 
-    border: 1px solid #4f98ca; 
+    border: 2px solid #192965; 
     padding: 10px;
     margin-bottom:10px;
     background: #bbe1fa;
@@ -31,15 +32,16 @@ input,select{
 h1,form{
     text-align: center;
 }*/
-.sub input{
+.sub{
     border:1px solid blue;
     background: #192965;
     margin-top: 20px;
     font-size:20px;
     font-weight: bolder;
-    padding-bottom: 30px;
+    padding: 30px;
     color:white;
-    
+    border-radius: 10px;
+    margin-left: 200px;
 }
 h4{
     padding:0;
@@ -49,12 +51,6 @@ h4{
 h1{
     border-bottom: 2px solid #bbe1fa;
     text-align: center;
-    margin-left:50px;
-}
-span{
-    border:1px solid orange;
-    padding-bottom: 10px;
-
 }
 ::-webkit-input-placeholder{
     color:#3282b8;
